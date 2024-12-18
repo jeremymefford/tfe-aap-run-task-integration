@@ -8,6 +8,7 @@ This project is a **Flask-based proxy application** designed to integrate **Terr
 ## **Features**
 - Validates webhook requests from TFE using HMAC.
 - Triggers AAP playbooks for TFE run tasks.
+  - Passes the TFE run_id as an AAP run specific variable (useful if the AAP task needs to know the TFE run)
 - Polls AAP for job statuses with configurable intervals.
 - Sends job updates back to TFE, including final outcomes (`success`, `failed`).
 
